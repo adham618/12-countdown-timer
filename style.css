@@ -7,3 +7,90 @@
     --Roboto-font: "Roboto",
         sans-serif;
 }
+
+/* gobal */
+
+body {
+    background-color: #F1F5F8;
+    font-family: var(--Roboto-font);
+}
+
+/* countdown */
+.countdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0;
+    gap: 3.5%;
+}
+
+@media (max-width: 995px) {
+    .countdown {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.countdown-image img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.countdown-content h2,
+h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.countdown-content h2 {
+    color: #1A6AA2;
+    letter-spacing: 5px;
+    font-size: 1.7rem;
+}
+
+.countdown-content h3 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+
+}
+
+.countdown-content p {
+    color: #969CBB;
+    margin: 2rem 0;
+
+}
+
+/* deadline */
+.deadline {
+    display: flex;
+}
+
+.deadline-format {
+    background-color: #102a42;
+    color: #FFF;
+    margin-right: 5%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 5rem;
+    height: 5rem;
+}
+
+.deadline-format h2 {
+    color: #FFF;
+    margin-bottom: 0;
+}
+
+.deadline-format span {
+    text-transform: uppercase;
+    font-size: .85rem;
+    display: block;
+    letter-spacing: 2px;
+    margin-top: -22px;
+}
+
+.deadline-format h2:not(.expired) {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.25rem;
+}
