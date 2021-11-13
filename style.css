@@ -47,6 +47,12 @@ h3 {
     font-size: 1.7rem;
 }
 
+@media (max-width: 425px) {
+    .countdown-content h2 {
+        font-size: 1.2rem;
+    }
+}
+
 .countdown-content h3 {
     font-size: 1rem;
     letter-spacing: 3px;
